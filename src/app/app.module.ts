@@ -2,11 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { FormComponent } from './form/form.component';
+import { HeaderComponent } from './header/header.component';
+import { CardsComponent } from './cards/cards.component';
+
 @NgModule({
-  declarations: [ // Aquí podemos añadir nuestros componentes para enlazarlos con los demás
-    AppComponent, HeaderComponent, FormComponent
+  declarations: [
+    AppComponent,
+    FormComponent,
+    HeaderComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

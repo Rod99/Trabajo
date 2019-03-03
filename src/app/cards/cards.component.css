@@ -1,0 +1,10 @@
+.tam_card{
+  max-width: 320px;
+  max-height: 500px;
+  min-width: 320px;
+  min-height:400px;
+}
+
+.letra_contenido_carta{
+  font-size: 9pt;
+}
