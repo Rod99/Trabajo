@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Trabajo": {
+    "Escuela": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Trabajo",
+            "outputPath": "dist/Escuela",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,13 +24,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
-
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js"
-            ],
+            "scripts": [],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -63,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Trabajo:build"
+            "browserTarget": "Escuela:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Trabajo:build:production"
+              "browserTarget": "Escuela:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Trabajo:build"
+            "browserTarget": "Escuela:build"
           }
         },
         "test": {
@@ -108,7 +104,7 @@
         }
       }
     },
-    "Trabajo-e2e": {
+    "Escuela-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Trabajo:serve"
+            "devServerTarget": "Escuela:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Trabajo:serve:production"
+              "devServerTarget": "Escuela:serve:production"
             }
           }
         },
@@ -137,5 +133,5 @@
       }
     }
   },
-  "defaultProject": "Trabajo"
+  "defaultProject": "Escuela"
 }
